@@ -45,6 +45,7 @@ return packer.startup({
 		use("wbthomason/packer.nvim") -- Have packer manage itself
 
 		-- General
+		use("nvim-lua/popup.nvim")
 		use("nvim-lua/plenary.nvim") -- Useful lua functions used by lots of plugins
 		use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 
@@ -86,7 +87,12 @@ return packer.startup({
 		use({ "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" })
 
 		-- nvim tree
+		use("kyazdani42/nvim-web-devicons")
 		use("kyazdani42/nvim-tree.lua")
+
+		-- bufferline
+		use({ "akinsho/bufferline.nvim", requires = "nvim-tree/nvim-web-devicons" })
+		use("moll/vim-bbye")
 
 		-- Automatically set up your configuration after cloning packer.nvim
 		-- Put this at the end after all plugins
