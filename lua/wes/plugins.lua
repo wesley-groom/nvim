@@ -87,8 +87,8 @@ return packer.startup({
 		use({ "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" })
 
 		-- nvim tree
-		use("kyazdani42/nvim-web-devicons")
-		use("kyazdani42/nvim-tree.lua")
+		use("nvim-tree/nvim-web-devicons")
+		use("nvim-tree/nvim-tree.lua")
 
 		-- bufferline
 		use({ "akinsho/bufferline.nvim", requires = "nvim-tree/nvim-web-devicons" })
