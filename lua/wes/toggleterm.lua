@@ -29,11 +29,11 @@ if package.config:sub(1, 1) == "\\" then
 	toggleterm.setup({
 	    open_mapping = "<C-\\>",
 	})
-	vim.cmd([[let &shell = '"C:\Program Files\Git\bin\bash.exe"']])
-	vim.cmd([[let &shellcmdflag = '-s']])
+    --vim.cmd([[let &shell = '"C:\Program Files\Git\bin\bash.exe"']])
+	--vim.cmd([[let &shellcmdflag = '-s']])
 else
 	toggleterm.setup({
-		open_mapping = [[<c-\>]],
+		open_mapping = [[<C-\>]],
 	})
 end
 

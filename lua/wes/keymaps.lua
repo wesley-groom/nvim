@@ -34,7 +34,7 @@ keymap("v", "p", '"_dP', opts) -- don't yank when pasting
 
 -- Telescope --
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>t", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Nvimtree --
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
