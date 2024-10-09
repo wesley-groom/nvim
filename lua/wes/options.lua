@@ -22,5 +22,3 @@ local options = {
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
-
-vim.g.python3_host_prog = '/Users/wgroom/.pyenv/versions/py3nvim/bin/python'
