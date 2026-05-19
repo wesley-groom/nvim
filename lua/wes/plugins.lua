@@ -50,10 +50,11 @@ return packer.startup({
 		use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 
 		-- toggleterm
-		use({ "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" })
+		use({"akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda"})
 
 		-- Colorschemes
-		use("cormacrelf/vim-colors-github")
+        use({"tjdevries/colorbuddy.nvim", commit = "cdb5b0654d3cafe61d2a845e15b2b4b0e78e752a"})
+        use({"Theo-Steiner/warped.nvim", requires = {"tjdevries/colorbuddy.nvim"}})
 
 		-- Cmp
 		use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -84,14 +85,14 @@ return packer.startup({
 		})
 
 		-- Git
-		use({ "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" })
+		use({"lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2"})
 
 		-- nvim tree
 		use("nvim-tree/nvim-web-devicons")
 		use("nvim-tree/nvim-tree.lua")
 
 		-- bufferline
-		use({ "akinsho/bufferline.nvim", requires = "nvim-tree/nvim-web-devicons" })
+		use({"akinsho/bufferline.nvim", requires = "nvim-tree/nvim-web-devicons"})
 		use("moll/vim-bbye")
 
 		-- Automatically set up your configuration after cloning packer.nvim
